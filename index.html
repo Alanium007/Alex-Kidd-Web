@@ -1,22 +1,255 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Mi web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            text-align: center;
-        }
-
-        h1 {
-            color: #2563eb;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Kidd — Tribute Project</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Alex Kidd Web</h1>
-    <p></p>
+
+  <!-- Background stars -->
+  <div class="stars" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════
+       HEADER
+  ══════════════════════════════ -->
+  <header>
+    <div class="logo-badge">UPC — Videogame Development</div>
+
+    <h1 class="game-title">Alex Kidd</h1>
+    <p class="subtitle">Miracle World DX &nbsp;·&nbsp; Tribute Project</p>
+  </header>
+
+  <!-- ══════════════════════════════
+       ABOUT THE GAME
+  ══════════════════════════════ -->
+  <section id="about" class="fade-in">
+    <div class="pixel-divider">ABOUT THE GAME</div>
+    <h2 class="section-title">Game Overview</h2>
+
+    <div class="game-card">
+      <div class="game-info">
+        <p>
+          <strong style="color:var(--gold)">Alex Kidd in Miracle World</strong> is a
+          legendary 1986 Sega Master System platformer — and the inspiration behind
+          our tribute reimagination. Players guide Alex Kidd through a vibrant world
+          full of mysteries, Boss encounters decided by <em>janken</em> (rock‑paper‑scissors),
+          power‑ups, vehicles, and secret paths.
+        </p>
+        <br/>
+        <p>
+          Our version rebuilds the original experience with modern tooling while
+          faithfully preserving the look, feel, and challenge that made the game
+          iconic. Built in <strong style="color:var(--cyan)">Godot Engine</strong> by a
+          team of five students as part of the UPC Videogame Development degree.
+        </p>
+      </div>
+
+      <!-- Replace src with your actual team photo -->
+      <div class="team-photo-wrapper">
+        <div class="scan-line-effect" aria-hidden="true"></div>
+        <div class="team-photo-placeholder">
+          <span class="icon">📸</span>
+          <span>TEAM PHOTO<br/>[ INSERT HERE ]</span>
+          <span style="color:var(--cyan);font-size:7px">Replace with &lt;img src="team.jpg"&gt;</span>
+        </div>
+        <!--
+          Swap the placeholder above for:
+          <img src="assets/team_photo.jpg" alt="The development team" />
+        -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TEAM MEMBERS
+  ══════════════════════════════ -->
+  <section id="team" class="fade-in">
+    <div class="pixel-divider">DEVELOPMENT TEAM</div>
+    <h2 class="section-title">Meet the Crew</h2>
+
+    <div class="team-grid">
+
+      <!-- Member 1 -->
+      <article class="member-card">
+        <div class="member-avatar">👾</div>
+        <div class="member-name">Alex García</div>
+        <div class="member-role">Lead Programmer</div>
+        <p class="member-desc">
+          Architected the core engine systems including the physics layer,
+          collision detection, and the enemy AI state machines.
+        </p>
+        <div class="tags">
+          <span class="tag">Physics</span>
+          <span class="tag">AI / FSM</span>
+          <span class="tag">Godot GDScript</span>
+        </div>
+      </article>
+
+      <!-- Member 2 -->
+      <article class="member-card">
+        <div class="member-avatar">🎨</div>
+        <div class="member-name">Maria López</div>
+        <div class="member-role">Art &amp; Animation</div>
+        <p class="member-desc">
+          Created all pixel‑art sprites, tilesets, and UI assets while
+          directing the overall visual identity and animation rigs.
+        </p>
+        <div class="tags">
+          <span class="tag">Pixel Art</span>
+          <span class="tag">Aseprite</span>
+          <span class="tag">UI Design</span>
+        </div>
+      </article>
+
+      <!-- Member 3 -->
+      <article class="member-card">
+        <div class="member-avatar">🗺️</div>
+        <div class="member-name">Jordi Martí</div>
+        <div class="member-role">Level Designer</div>
+        <p class="member-desc">
+          Designed and iterated on all seven worlds, crafting pacing,
+          difficulty curves, secret rooms, and item placement.
+        </p>
+        <div class="tags">
+          <span class="tag">Tiled / Godot</span>
+          <span class="tag">Level Design</span>
+          <span class="tag">Playtesting</span>
+        </div>
+      </article>
+
+      <!-- Member 4 -->
+      <article class="member-card">
+        <div class="member-avatar">🎵</div>
+        <div class="member-name">Sara Pons</div>
+        <div class="member-role">Audio &amp; SFX</div>
+        <p class="member-desc">
+          Composed chiptune remixes of the original OST and designed
+          every sound effect using Beepbox and Audacity.
+        </p>
+        <div class="tags">
+          <span class="tag">Beepbox</span>
+          <span class="tag">Audacity</span>
+          <span class="tag">Chiptune</span>
+        </div>
+      </article>
+
+      <!-- Member 5 -->
+      <article class="member-card">
+        <div class="member-avatar">🛠️</div>
+        <div class="member-name">David Ruiz</div>
+        <div class="member-role">Tools &amp; QA</div>
+        <p class="member-desc">
+          Built the in‑game debug HUD (colliders, hitboxes, area visualisers),
+          CI pipeline, and managed all release packaging.
+        </p>
+        <div class="tags">
+          <span class="tag">Debug Tools</span>
+          <span class="tag">CI / CD</span>
+          <span class="tag">QA Lead</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       GAMEPLAY VIDEO
+  ══════════════════════════════ -->
+  <section id="video" class="fade-in">
+    <div class="pixel-divider">GAMEPLAY</div>
+    <h2 class="section-title">Watch the Gameplay</h2>
+
+    <div class="video-container">
+      <!--
+        ▶ HOW TO EMBED YOUR YOUTUBE VIDEO:
+          1. Upload your video to YouTube.
+          2. Click Share → Embed → copy the src URL.
+          3. Replace the src below (it looks like https://www.youtube.com/embed/VIDEO_ID).
+          4. Delete the .video-placeholder div below and uncomment the .video-wrapper div.
+      -->
+
+      <!-- ── UNCOMMENT THIS WHEN YOU HAVE A YOUTUBE LINK ── -->
+      <!--
+      <div class="video-wrapper">
+        <iframe
+          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+          title="Alex Kidd Tribute — Gameplay Video"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+        </iframe>
+      </div>
+      -->
+
+      <!-- ── PLACEHOLDER (delete once you have a YouTube link) ── -->
+      <div class="video-placeholder" role="img" aria-label="Video coming soon">
+        <div class="play-btn" aria-hidden="true">▶</div>
+        <p class="video-label">
+          INSERT YOUTUBE VIDEO ID<br/>
+          <span style="color:var(--gold);font-size:7px">(uncomment iframe in HTML)</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       DOWNLOAD
+  ══════════════════════════════ -->
+  <section id="download" class="fade-in">
+    <div class="pixel-divider">RELEASE</div>
+
+    <div class="download-box">
+      <h2 class="download-title">⬇ Download the Game</h2>
+      <p class="download-desc">
+        Grab the latest release and run it on Windows, Linux or macOS.<br/>
+        No install needed — unzip and play!
+      </p>
+
+      <!--
+        Replace href="#" with your actual download link,
+        e.g. a GitHub Releases URL or itch.io page.
+      -->
+      <a href="#" class="btn-download" download>
+        <span class="dl-icon">📦</span>
+        DOWNLOAD v1.0.0
+      </a>
+
+      <br/>
+      <span class="version-badge">LATEST STABLE RELEASE</span>
+
+      <div style="margin-top:28px; display:flex; gap:32px; justify-content:center; flex-wrap:wrap;">
+        <span style="font-size:12px;color:var(--muted)">🖥 Windows .exe</span>
+        <span style="font-size:12px;color:var(--muted)">🐧 Linux AppImage</span>
+        <span style="font-size:12px;color:var(--muted)">🍎 macOS .app</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer>
+    <p>Made with <span>♥</span> — UPC Videogame Development · 2024</p>
+    <p style="margin-top:8px">This project is a tribute to SEGA's Alex Kidd in Miracle World (1986)</p>
+    <p style="margin-top:8px;color:var(--border)">All original IP belongs to their respective owners</p>
+  </footer>
+
+  <!-- ══════════════════════════════
+       SCROLL ANIMATION SCRIPT
+  ══════════════════════════════ -->
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
 </body>
 </html>
