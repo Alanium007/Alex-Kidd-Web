@@ -11,14 +11,32 @@
   <!-- Background stars -->
   <div class="stars" aria-hidden="true"></div>
 
+  <!-- Floating pixels decoration -->
+  <div class="floating-pixels" aria-hidden="true">
+    <div class="fp fp1"></div>
+    <div class="fp fp2"></div>
+    <div class="fp fp3"></div>
+    <div class="fp fp4"></div>
+    <div class="fp fp5"></div>
+    <div class="fp fp6"></div>
+  </div>
+
   <!-- ══════════════════════════════
        HEADER
   ══════════════════════════════ -->
   <header>
     <div class="logo-badge">UPC — Videogame Development</div>
-
     <h1 class="game-title">Alex Kidd</h1>
     <p class="subtitle">Miracle World DX &nbsp;·&nbsp; Tribute Project</p>
+    <div class="header-deco" aria-hidden="true">
+      <span class="hd-pixel"></span>
+      <span class="hd-pixel"></span>
+      <span class="hd-pixel"></span>
+      <span class="hd-text">PRESS START</span>
+      <span class="hd-pixel"></span>
+      <span class="hd-pixel"></span>
+      <span class="hd-pixel"></span>
+    </div>
   </header>
 
   <!-- ══════════════════════════════
@@ -43,11 +61,10 @@
         </p>
         <br/>
         <p>
-Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicábamos conocimientos de programación y desarrollo de videojuegos, combinando fidelidad al original con las herramientas y metodologías actuales.
+          Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicábamos conocimientos de programación y desarrollo de videojuegos, combinando fidelidad al original con las herramientas y metodologías actuales.
         </p>
       </div>
 
-      <!-- Replace src with your actual team photo -->
       <div class="team-photo-wrapper">
         <div class="scan-line-effect" aria-hidden="true"></div>
         <div class="team-photo-placeholder">
@@ -55,10 +72,6 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
           <span>TEAM PHOTO<br/>[ INSERT HERE ]</span>
           <span style="color:var(--cyan);font-size:7px">Replace with &lt;img src="team.jpg"&gt;</span>
         </div>
-        <!--
-          Swap the placeholder above for:
-          <img src="assets/team_photo.jpg" alt="The development team" />
-        -->
       </div>
     </div>
   </section>
@@ -69,12 +82,22 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
   <section id="team" class="fade-in">
     <div class="pixel-divider">DEVELOPMENT TEAM</div>
     <h2 class="section-title">Meet the Crew</h2>
+    <p class="team-hint">
+      <span class="blink-text">▼</span>&nbsp; CLICK ON A CARD TO VIEW FULL PROFILE &nbsp;<span class="blink-text">▼</span>
+    </p>
 
     <div class="team-grid">
 
       <!-- Member 1 -->
-      <article class="member-card">
-        <div class="member-avatar">👾</div>
+      <article class="member-card" data-member="alan" tabindex="0" role="button" aria-label="View Alan del Tío profile">
+        <div class="card-scanline" aria-hidden="true"></div>
+        <div class="card-corner tl" aria-hidden="true"></div>
+        <div class="card-corner tr" aria-hidden="true"></div>
+        <div class="card-corner bl" aria-hidden="true"></div>
+        <div class="card-corner br" aria-hidden="true"></div>
+        <div class="member-avatar">👾
+          <div class="avatar-ring"></div>
+        </div>
         <div class="member-name">Alan del Tío</div>
         <div class="member-role">Lead Programmer</div>
         <p class="member-desc">
@@ -84,17 +107,25 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
         <div class="tags">
           <span class="tag">Physics</span>
           <span class="tag">AI / FSM</span>
-          <span class="tag">Godot GDScript</span>
+          <span class="tag">Raylib</span>
         </div>
+        <div class="card-cta">[ CLICK TO EXPAND ]</div>
       </article>
 
       <!-- Member 2 -->
-      <article class="member-card">
-        <div class="member-avatar">🎨</div>
+      <article class="member-card" data-member="lluc" tabindex="0" role="button" aria-label="View Lluc Torner profile">
+        <div class="card-scanline" aria-hidden="true"></div>
+        <div class="card-corner tl" aria-hidden="true"></div>
+        <div class="card-corner tr" aria-hidden="true"></div>
+        <div class="card-corner bl" aria-hidden="true"></div>
+        <div class="card-corner br" aria-hidden="true"></div>
+        <div class="member-avatar" style="background:linear-gradient(135deg,var(--red),var(--orange))">🎨
+          <div class="avatar-ring" style="border-color:var(--orange)"></div>
+        </div>
         <div class="member-name">Lluc Torner</div>
         <div class="member-role">Art &amp; Animation</div>
         <p class="member-desc">
-          Created all pixel‑art sprites, tilesets, and UI assets while
+          Created all pixel-art sprites, tilesets, and UI assets while
           directing the overall visual identity and animation rigs.
         </p>
         <div class="tags">
@@ -102,11 +133,19 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
           <span class="tag">Aseprite</span>
           <span class="tag">UI Design</span>
         </div>
+        <div class="card-cta">[ CLICK TO EXPAND ]</div>
       </article>
 
       <!-- Member 3 -->
-      <article class="member-card">
-        <div class="member-avatar">🗺️</div>
+      <article class="member-card" data-member="ian" tabindex="0" role="button" aria-label="View Ian León profile">
+        <div class="card-scanline" aria-hidden="true"></div>
+        <div class="card-corner tl" aria-hidden="true"></div>
+        <div class="card-corner tr" aria-hidden="true"></div>
+        <div class="card-corner bl" aria-hidden="true"></div>
+        <div class="card-corner br" aria-hidden="true"></div>
+        <div class="member-avatar" style="background:linear-gradient(135deg,#1a6b2a,#00ff88)">🗺️
+          <div class="avatar-ring" style="border-color:#00ff88"></div>
+        </div>
         <div class="member-name">Ian León</div>
         <div class="member-role">Level Designer</div>
         <p class="member-desc">
@@ -114,15 +153,23 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
           difficulty curves, secret rooms, and item placement.
         </p>
         <div class="tags">
-          <span class="tag">Tiled / Godot</span>
+          <span class="tag">Tiled</span>
           <span class="tag">Level Design</span>
           <span class="tag">Playtesting</span>
         </div>
+        <div class="card-cta">[ CLICK TO EXPAND ]</div>
       </article>
 
       <!-- Member 4 -->
-      <article class="member-card">
-        <div class="member-avatar">🎵</div>
+      <article class="member-card" data-member="yarley" tabindex="0" role="button" aria-label="View Yarley Tituana profile">
+        <div class="card-scanline" aria-hidden="true"></div>
+        <div class="card-corner tl" aria-hidden="true"></div>
+        <div class="card-corner tr" aria-hidden="true"></div>
+        <div class="card-corner bl" aria-hidden="true"></div>
+        <div class="card-corner br" aria-hidden="true"></div>
+        <div class="member-avatar" style="background:linear-gradient(135deg,#6b00aa,#cc00ff)">🎵
+          <div class="avatar-ring" style="border-color:#cc00ff"></div>
+        </div>
         <div class="member-name">Yarley Tituana</div>
         <div class="member-role">Audio &amp; SFX</div>
         <p class="member-desc">
@@ -134,8 +181,8 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
           <span class="tag">Audacity</span>
           <span class="tag">Chiptune</span>
         </div>
+        <div class="card-cta">[ CLICK TO EXPAND ]</div>
       </article>
-
 
     </div>
   </section>
@@ -148,27 +195,14 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
     <h2 class="section-title">Watch the Gameplay</h2>
 
     <div class="video-container">
-      <!--
-        ▶ HOW TO EMBED YOUR YOUTUBE VIDEO:
-          1. Upload your video to YouTube.
-          2. Click Share → Embed → copy the src URL.
-          3. Replace the src below (it looks like https://www.youtube.com/embed/VIDEO_ID).
-          4. Delete the .video-placeholder div below and uncomment the .video-wrapper div.
-      -->
-
-      <!-- ── UNCOMMENT THIS WHEN YOU HAVE A YOUTUBE LINK ── -->
-      <!--
+      <!-- Uncomment when you have a YouTube link:
       <div class="video-wrapper">
-        <iframe
-          src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+        <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
           title="Alex Kidd Tribute — Gameplay Video"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen>
-        </iframe>
+          allowfullscreen></iframe>
       </div>
       -->
-
-      <!-- ── PLACEHOLDER (delete once you have a YouTube link) ── -->
       <div class="video-placeholder" role="img" aria-label="Video coming soon">
         <div class="play-btn" aria-hidden="true">▶</div>
         <p class="video-label">
@@ -191,19 +225,12 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
         Grab the latest release and run it on Windows, Linux or macOS.<br/>
         No install needed — unzip and play!
       </p>
-
-      <!--
-        Replace href="#" with your actual download link,
-        e.g. a GitHub Releases URL or itch.io page.
-      -->
       <a href="#" class="btn-download" download>
         <span class="dl-icon">📦</span>
         DOWNLOAD v1.0.0
       </a>
-
       <br/>
       <span class="version-badge">LATEST STABLE RELEASE</span>
-
       <div style="margin-top:28px; display:flex; gap:32px; justify-content:center; flex-wrap:wrap;">
         <span style="font-size:12px;color:var(--muted)">🖥 Windows .exe</span>
         <span style="font-size:12px;color:var(--muted)">🐧 Linux AppImage</span>
@@ -221,10 +248,466 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
     <p style="margin-top:8px;color:var(--border)">All original IP belongs to their respective owners</p>
   </footer>
 
+
+  <!-- ══════════════════════════════════════════════════════
+       MEMBER MODALS
+  ══════════════════════════════════════════════════════ -->
+
+  <!-- MODAL OVERLAY -->
+  <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+    <div class="modal-scanlines" aria-hidden="true"></div>
+  </div>
+
+  <!-- ─── ALAN ─── -->
+  <dialog class="member-modal" id="modal-alan" aria-label="Alan del Tío profile">
+    <div class="modal-inner">
+      <div class="modal-bg-grid" aria-hidden="true"></div>
+      <div class="modal-corner tl" aria-hidden="true">┌</div>
+      <div class="modal-corner tr" aria-hidden="true">┐</div>
+      <div class="modal-corner bl" aria-hidden="true">└</div>
+      <div class="modal-corner br" aria-hidden="true">┘</div>
+
+      <button class="modal-close" aria-label="Close">&times;</button>
+
+      <div class="modal-header">
+        <div class="modal-avatar">👾
+          <div class="modal-avatar-ring"></div>
+          <div class="modal-avatar-ping"></div>
+        </div>
+        <div class="modal-title-block">
+          <div class="modal-player-id">PLAYER_01</div>
+          <h2 class="modal-name">Alan del Tío</h2>
+          <div class="modal-role-badge">⚙ LEAD PROGRAMMER</div>
+          <div class="modal-tags">
+            <span class="tag">Physics</span>
+            <span class="tag">AI / FSM</span>
+            <span class="tag">Raylib</span>
+            <span class="tag">C++</span>
+            <span class="tag">Collision</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"><span>── PROFILE ──</span></div>
+
+      <div class="modal-body">
+        <div class="modal-col">
+          <div class="modal-section-label">▸ ABOUT</div>
+          <p class="modal-text">
+            Alan es el cerebro técnico del equipo. Responsable de arquitectar desde cero el motor de juego, diseñó el sistema de física que da vida a los movimientos de Alex Kidd, asegurando que cada salto y caída se sienta auténtico al original de 1986.
+          </p>
+          <p class="modal-text">
+            Su implementación de la detección de colisiones pixel-perfect fue clave para replicar la sensación exacta del juego clásico, y sus máquinas de estados finitos dotan a los enemigos de comportamientos creíbles y desafiantes.
+          </p>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ CONTRIBUCIONES CLAVE</div>
+          <ul class="modal-list">
+            <li><span class="li-icon">►</span> Sistema de física y gravedad personalizada</li>
+            <li><span class="li-icon">►</span> Detección de colisiones AABB + tile-based</li>
+            <li><span class="li-icon">►</span> IA de enemigos con FSM (Finite State Machine)</li>
+            <li><span class="li-icon">►</span> Gestión del game loop y delta time</li>
+            <li><span class="li-icon">►</span> Sistema de cámara y scroll lateral</li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <div class="modal-section-label">▸ STATS</div>
+          <div class="stat-bars">
+            <div class="stat-row">
+              <span class="stat-label">PROGRAMMING</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:95%;--c:var(--cyan)"></div></div>
+              <span class="stat-val">95</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">ARCHITECTURE</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:90%;--c:var(--gold)"></div></div>
+              <span class="stat-val">90</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">DEBUGGING</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:88%;--c:var(--orange)"></div></div>
+              <span class="stat-val">88</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">AI DESIGN</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:80%;--c:var(--red)"></div></div>
+              <span class="stat-val">80</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">TEAMWORK</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:92%;--c:#00ff88)"></div></div>
+              <span class="stat-val">92</span>
+            </div>
+          </div>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ TECH STACK</div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <span class="tech-icon">🛠</span>
+              <span>Visual Studio</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">📦</span>
+              <span>Raylib 4.5</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">💾</span>
+              <span>C / C++</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🔀</span>
+              <span>Git / GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-bar">
+        <span class="modal-footer-id">ID: AK-P01 · UPC · 2024</span>
+        <span class="modal-footer-status blink-text">● ACTIVE</span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ─── LLUC ─── -->
+  <dialog class="member-modal" id="modal-lluc" aria-label="Lluc Torner profile">
+    <div class="modal-inner" style="--accent:var(--orange);--accent2:var(--red)">
+      <div class="modal-bg-grid" aria-hidden="true"></div>
+      <div class="modal-corner tl" aria-hidden="true">┌</div>
+      <div class="modal-corner tr" aria-hidden="true">┐</div>
+      <div class="modal-corner bl" aria-hidden="true">└</div>
+      <div class="modal-corner br" aria-hidden="true">┘</div>
+
+      <button class="modal-close" aria-label="Close">&times;</button>
+
+      <div class="modal-header">
+        <div class="modal-avatar" style="background:linear-gradient(135deg,var(--red),var(--orange))">🎨
+          <div class="modal-avatar-ring" style="border-color:var(--orange)"></div>
+          <div class="modal-avatar-ping" style="background:var(--orange)"></div>
+        </div>
+        <div class="modal-title-block">
+          <div class="modal-player-id" style="color:var(--orange)">PLAYER_02</div>
+          <h2 class="modal-name" style="color:var(--orange)">Lluc Torner</h2>
+          <div class="modal-role-badge" style="border-color:var(--orange);color:var(--orange)">🎨 ART &amp; ANIMATION</div>
+          <div class="modal-tags">
+            <span class="tag">Pixel Art</span>
+            <span class="tag">Aseprite</span>
+            <span class="tag">UI Design</span>
+            <span class="tag">Animation</span>
+            <span class="tag">Tilesets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"><span>── PROFILE ──</span></div>
+
+      <div class="modal-body">
+        <div class="modal-col">
+          <div class="modal-section-label">▸ ABOUT</div>
+          <p class="modal-text">
+            Lluc es el artista visual del equipo. Con un ojo excepcional para el pixel art retro, se encargó de recrear fielmente la estética característica de Alex Kidd, desde los sprites del protagonista hasta cada tile de los escenarios.
+          </p>
+          <p class="modal-text">
+            Diseñó la identidad visual completa del proyecto: menús, HUD, efectos de partículas y todos los assets animados que dan vida al mundo del juego, manteniendo siempre la paleta de colores y el estilo gráfico del original de SEGA.
+          </p>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ CONTRIBUCIONES CLAVE</div>
+          <ul class="modal-list">
+            <li><span class="li-icon" style="color:var(--orange)">►</span> Sprites animados del personaje principal</li>
+            <li><span class="li-icon" style="color:var(--orange)">►</span> Tilesets de todos los mundos y escenarios</li>
+            <li><span class="li-icon" style="color:var(--orange)">►</span> Diseño de UI: HUD, menús y pantallas</li>
+            <li><span class="li-icon" style="color:var(--orange)">►</span> Sprites de enemigos y elementos interactivos</li>
+            <li><span class="li-icon" style="color:var(--orange)">►</span> Sistema de animaciones por frames</li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <div class="modal-section-label">▸ STATS</div>
+          <div class="stat-bars">
+            <div class="stat-row">
+              <span class="stat-label">PIXEL ART</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:98%;--c:var(--orange)"></div></div>
+              <span class="stat-val">98</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">ANIMATION</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:91%;--c:var(--gold)"></div></div>
+              <span class="stat-val">91</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">UI DESIGN</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:87%;--c:var(--cyan)"></div></div>
+              <span class="stat-val">87</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">COLOR THEORY</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:94%;--c:var(--red)"></div></div>
+              <span class="stat-val">94</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">CREATIVITY</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:99%;--c:#ff88cc"></div></div>
+              <span class="stat-val">99</span>
+            </div>
+          </div>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ TECH STACK</div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <span class="tech-icon">🖼</span>
+              <span>Aseprite</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🎨</span>
+              <span>Photoshop</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🗂</span>
+              <span>Texture Packer</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">📐</span>
+              <span>Figma (UI)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-bar">
+        <span class="modal-footer-id">ID: AK-P02 · UPC · 2024</span>
+        <span class="modal-footer-status blink-text" style="color:var(--orange)">● ACTIVE</span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ─── IAN ─── -->
+  <dialog class="member-modal" id="modal-ian" aria-label="Ian León profile">
+    <div class="modal-inner" style="--accent:#00ff88;--accent2:#1a6b2a">
+      <div class="modal-bg-grid" aria-hidden="true"></div>
+      <div class="modal-corner tl" aria-hidden="true">┌</div>
+      <div class="modal-corner tr" aria-hidden="true">┐</div>
+      <div class="modal-corner bl" aria-hidden="true">└</div>
+      <div class="modal-corner br" aria-hidden="true">┘</div>
+
+      <button class="modal-close" aria-label="Close">&times;</button>
+
+      <div class="modal-header">
+        <div class="modal-avatar" style="background:linear-gradient(135deg,#1a6b2a,#00ff88)">🗺️
+          <div class="modal-avatar-ring" style="border-color:#00ff88"></div>
+          <div class="modal-avatar-ping" style="background:#00ff88"></div>
+        </div>
+        <div class="modal-title-block">
+          <div class="modal-player-id" style="color:#00ff88">PLAYER_03</div>
+          <h2 class="modal-name" style="color:#00ff88">Ian León</h2>
+          <div class="modal-role-badge" style="border-color:#00ff88;color:#00ff88">🗺 LEVEL DESIGNER</div>
+          <div class="modal-tags">
+            <span class="tag">Tiled</span>
+            <span class="tag">Level Design</span>
+            <span class="tag">Playtesting</span>
+            <span class="tag">Pacing</span>
+            <span class="tag">Secrets</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"><span>── PROFILE ──</span></div>
+
+      <div class="modal-body">
+        <div class="modal-col">
+          <div class="modal-section-label">▸ ABOUT</div>
+          <p class="modal-text">
+            Ian es el arquitecto de los mundos del juego. Con una pasión por el diseño de niveles clásico, reconstruyó los escenarios de Alex Kidd prestando especial atención a la curva de dificultad progresiva y al pacing que hizo famoso al original.
+          </p>
+          <p class="modal-text">
+            Iteró múltiples veces sobre cada nivel, realizando sesiones de playtesting internas y ajustando la colocación de enemigos, plataformas y objetos hasta conseguir la experiencia justa y equilibrada que caracteriza al juego.
+          </p>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ CONTRIBUCIONES CLAVE</div>
+          <ul class="modal-list">
+            <li><span class="li-icon" style="color:#00ff88">►</span> Diseño y layout de los 7 mundos del juego</li>
+            <li><span class="li-icon" style="color:#00ff88">►</span> Curva de dificultad y pacing de cada nivel</li>
+            <li><span class="li-icon" style="color:#00ff88">►</span> Colocación estratégica de enemigos e ítems</li>
+            <li><span class="li-icon" style="color:#00ff88">►</span> Habitaciones secretas y rutas alternativas</li>
+            <li><span class="li-icon" style="color:#00ff88">►</span> Coordinación y sesiones de playtesting</li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <div class="modal-section-label">▸ STATS</div>
+          <div class="stat-bars">
+            <div class="stat-row">
+              <span class="stat-label">LEVEL DESIGN</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:96%;--c:#00ff88"></div></div>
+              <span class="stat-val">96</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">PACING</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:89%;--c:var(--gold)"></div></div>
+              <span class="stat-val">89</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">PLAYTESTING</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:93%;--c:var(--cyan)"></div></div>
+              <span class="stat-val">93</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">CREATIVITY</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:85%;--c:var(--orange)"></div></div>
+              <span class="stat-val">85</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">ATTENTION ∙ DETAIL</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:97%;--c:#00ff88"></div></div>
+              <span class="stat-val">97</span>
+            </div>
+          </div>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ TECH STACK</div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <span class="tech-icon">🗺</span>
+              <span>Tiled Editor</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">📝</span>
+              <span>JSON Maps</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🎮</span>
+              <span>Playtesting</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">📊</span>
+              <span>Miro / Docs</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-bar">
+        <span class="modal-footer-id">ID: AK-P03 · UPC · 2024</span>
+        <span class="modal-footer-status blink-text" style="color:#00ff88">● ACTIVE</span>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ─── YARLEY ─── -->
+  <dialog class="member-modal" id="modal-yarley" aria-label="Yarley Tituana profile">
+    <div class="modal-inner" style="--accent:#cc00ff;--accent2:#6b00aa">
+      <div class="modal-bg-grid" aria-hidden="true"></div>
+      <div class="modal-corner tl" aria-hidden="true">┌</div>
+      <div class="modal-corner tr" aria-hidden="true">┐</div>
+      <div class="modal-corner bl" aria-hidden="true">└</div>
+      <div class="modal-corner br" aria-hidden="true">┘</div>
+
+      <button class="modal-close" aria-label="Close">&times;</button>
+
+      <div class="modal-header">
+        <div class="modal-avatar" style="background:linear-gradient(135deg,#6b00aa,#cc00ff)">🎵
+          <div class="modal-avatar-ring" style="border-color:#cc00ff"></div>
+          <div class="modal-avatar-ping" style="background:#cc00ff"></div>
+        </div>
+        <div class="modal-title-block">
+          <div class="modal-player-id" style="color:#cc00ff">PLAYER_04</div>
+          <h2 class="modal-name" style="color:#cc00ff">Yarley Tituana</h2>
+          <div class="modal-role-badge" style="border-color:#cc00ff;color:#cc00ff">🎵 AUDIO &amp; SFX</div>
+          <div class="modal-tags">
+            <span class="tag">Beepbox</span>
+            <span class="tag">Audacity</span>
+            <span class="tag">Chiptune</span>
+            <span class="tag">SFX</span>
+            <span class="tag">OST Remix</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-divider"><span>── PROFILE ──</span></div>
+
+      <div class="modal-body">
+        <div class="modal-col">
+          <div class="modal-section-label">▸ ABOUT</div>
+          <p class="modal-text">
+            Yarley es la voz sonora del proyecto. Con un profundo amor por la música chiptune y los efectos retro, se encargó de reimaginar la banda sonora original de Alex Kidd, dándole una nueva vida que respeta el espíritu del original mientras añade su propio toque creativo.
+          </p>
+          <p class="modal-text">
+            Diseñó y produjo todos los efectos de sonido del juego, desde el impacto de los puñetazos hasta los jingles de victoria y derrota, cuidando cada detalle para que la experiencia auditiva sea inmersiva y auténticamente retro.
+          </p>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ CONTRIBUCIONES CLAVE</div>
+          <ul class="modal-list">
+            <li><span class="li-icon" style="color:#cc00ff">►</span> Remixes chiptune de la OST original de SEGA</li>
+            <li><span class="li-icon" style="color:#cc00ff">►</span> Efectos de sonido para todas las acciones</li>
+            <li><span class="li-icon" style="color:#cc00ff">►</span> Jingles de menú, victoria y game over</li>
+            <li><span class="li-icon" style="color:#cc00ff">►</span> Integración de audio con Raylib</li>
+            <li><span class="li-icon" style="color:#cc00ff">►</span> Diseño sonoro ambiental por mundo</li>
+          </ul>
+        </div>
+
+        <div class="modal-col">
+          <div class="modal-section-label">▸ STATS</div>
+          <div class="stat-bars">
+            <div class="stat-row">
+              <span class="stat-label">COMPOSITION</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:94%;--c:#cc00ff"></div></div>
+              <span class="stat-val">94</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">SFX DESIGN</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:90%;--c:var(--gold)"></div></div>
+              <span class="stat-val">90</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">CHIPTUNE</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:97%;--c:var(--cyan)"></div></div>
+              <span class="stat-val">97</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">AUDIO MIXING</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:83%;--c:var(--orange)"></div></div>
+              <span class="stat-val">83</span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">CREATIVITY</span>
+              <div class="stat-bar"><div class="stat-fill" style="--w:96%;--c:#cc00ff"></div></div>
+              <span class="stat-val">96</span>
+            </div>
+          </div>
+
+          <div class="modal-section-label" style="margin-top:24px">▸ TECH STACK</div>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <span class="tech-icon">🎹</span>
+              <span>Beepbox</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🎚</span>
+              <span>Audacity</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🔊</span>
+              <span>Raylib Audio</span>
+            </div>
+            <div class="tech-item">
+              <span class="tech-icon">🎼</span>
+              <span>MIDI Tools</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer-bar">
+        <span class="modal-footer-id">ID: AK-P04 · UPC · 2024</span>
+        <span class="modal-footer-status blink-text" style="color:#cc00ff">● ACTIVE</span>
+      </div>
+    </div>
+  </dialog>
+
+
   <!-- ══════════════════════════════
-       SCROLL ANIMATION SCRIPT
+       SCRIPTS
   ══════════════════════════════ -->
   <script>
+    /* ─ Scroll fade-in ─ */
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(e => {
         if (e.isIntersecting) {
@@ -233,8 +716,67 @@ Nuestro objetivo ha sido rendir homenaje a este clásico retro mientras aplicáb
         }
       });
     }, { threshold: 0.1 });
-
     document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+
+    /* ─ Modal logic ─ */
+    const overlay   = document.getElementById('modalOverlay');
+    const cards     = document.querySelectorAll('.member-card');
+    const allModals = document.querySelectorAll('.member-modal');
+
+    function openModal(memberId) {
+      const modal = document.getElementById('modal-' + memberId);
+      if (!modal) return;
+
+      // close any open modal first
+      allModals.forEach(m => { m.classList.remove('modal-open'); m.close?.(); });
+
+      overlay.classList.add('active');
+      modal.classList.add('modal-open');
+      modal.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-lock');
+
+      // animate stat bars on open
+      setTimeout(() => {
+        modal.querySelectorAll('.stat-fill').forEach((bar, i) => {
+          bar.style.animationDelay = (i * 0.12) + 's';
+          bar.classList.add('animated');
+        });
+      }, 80);
+    }
+
+    function closeAll() {
+      allModals.forEach(m => { m.classList.remove('modal-open'); });
+      overlay.classList.remove('active');
+      document.body.classList.remove('modal-lock');
+    }
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => openModal(card.dataset.member));
+      card.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openModal(card.dataset.member); }
+      });
+    });
+
+    document.querySelectorAll('.modal-close').forEach(btn => {
+      btn.addEventListener('click', closeAll);
+    });
+
+    overlay.addEventListener('click', closeAll);
+
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeAll();
+    });
+
+    /* pixel noise on card hover */
+    cards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = ((e.clientX - rect.left) / rect.width) * 100;
+        const y = ((e.clientY - rect.top) / rect.height) * 100;
+        card.style.setProperty('--mx', x + '%');
+        card.style.setProperty('--my', y + '%');
+      });
+    });
   </script>
 
 </body>
